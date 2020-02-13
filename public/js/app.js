@@ -2007,6 +2007,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 // import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
@@ -38085,11 +38089,11 @@ var render = function() {
                           "v-avatar",
                           { attrs: { color: "primary", size: "150" } },
                           [
-                            _c(
-                              "span",
-                              { staticClass: "white--text headline" },
-                              [_vm._v("Profile Pic")]
-                            )
+                            _c("img", {
+                              staticClass: "rounded-circle",
+                              staticStyle: { height: "150px" },
+                              attrs: { src: "/jpeg/profile.jpg" }
+                            })
                           ]
                         )
                       ],

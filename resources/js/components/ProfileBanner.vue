@@ -7,7 +7,11 @@
           <v-col cols="3">
             <div class="pr-10" align="right">
               <v-avatar color="primary" size="150">
-                <span class="white--text headline">Profile Pic</span>
+                <img
+                  src="/jpeg/profile.jpg"
+                  class="rounded-circle"
+                  style="height: 150px;"
+                />
               </v-avatar>
             </div>
           </v-col>
