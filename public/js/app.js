@@ -2024,6 +2024,237 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ProfilePictures",
+  data: function data() {
+    return {
+      dialog: false,
+      fullscreen: false,
+      isHovered: false,
+      selectedImage: null
+    };
+  },
+  methods: {
+    closeZoom: function closeZoom() {
+      this.dialog = false;
+      this.fullscreen = false;
+    },
+    openDialog: function openDialog(url) {
+      this.dialog = !this.dialog; // eslint-disable-next-line no-console
+
+      console.log(url);
+      this.zoom(url);
+    },
+    zoom: function zoom(url) {
+      // eslint-disable-next-line no-console
+      console.log("Zoom", url);
+      this.selectedImage = url;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -38240,6 +38471,553 @@ var render = function() {
                             1
                           )
                         ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "grey lighten-5" },
+    [
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "6", "offset-sm": "3" } },
+            [
+              _c(
+                "v-tabs",
+                {
+                  attrs: {
+                    "background-color": "grey lighten-5",
+                    color: "blue accent-4",
+                    "fixed-tabs": ""
+                  }
+                },
+                [
+                  _c("v-tab", [_vm._v("My Posts")]),
+                  _vm._v(" "),
+                  _c("v-tab", [_vm._v("Favorites")]),
+                  _vm._v(" "),
+                  _c(
+                    "v-tab-item",
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          attrs: { color: "grey lighten-5", flat: "", tile: "" }
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "" } },
+                            [
+                              _c(
+                                "v-row",
+                                _vm._l(9, function(n) {
+                                  return _c(
+                                    "v-col",
+                                    {
+                                      key: n,
+                                      staticClass: "d-flex child-flex",
+                                      attrs: { cols: "4" }
+                                    },
+                                    [
+                                      _c(
+                                        "v-card",
+                                        {
+                                          staticClass: "d-flex",
+                                          attrs: { flat: "", tile: "" }
+                                        },
+                                        [
+                                          _c("v-img", {
+                                            staticClass: "grey lighten-2",
+                                            attrs: {
+                                              src:
+                                                "https://picsum.photos/500/300?image=" +
+                                                (n * 5 + 10),
+                                              "lazy-src":
+                                                "https://picsum.photos/10/6?image=" +
+                                                (n * 5 + 10),
+                                              "aspect-ratio": "1"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.openDialog(
+                                                  "https://picsum.photos/500/300?image=" +
+                                                    (n * 5 + 10)
+                                                )
+                                              }
+                                            },
+                                            scopedSlots: _vm._u(
+                                              [
+                                                {
+                                                  key: "placeholder",
+                                                  fn: function() {
+                                                    return [
+                                                      _c(
+                                                        "v-row",
+                                                        {
+                                                          staticClass:
+                                                            "fill-height ma-0",
+                                                          attrs: {
+                                                            align: "center",
+                                                            justify: "center"
+                                                          }
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "v-progress-circular",
+                                                            {
+                                                              attrs: {
+                                                                indeterminate:
+                                                                  "",
+                                                                color:
+                                                                  "grey lighten-5"
+                                                              }
+                                                            }
+                                                          )
+                                                        ],
+                                                        1
+                                                      )
+                                                    ]
+                                                  },
+                                                  proxy: true
+                                                }
+                                              ],
+                                              null,
+                                              true
+                                            )
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-tab-item",
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          attrs: { color: "grey lighten-5", flat: "", tile: "" }
+                        },
+                        [
+                          _c(
+                            "v-container",
+                            { attrs: { fluid: "" } },
+                            [
+                              _c(
+                                "v-row",
+                                _vm._l(9, function(n) {
+                                  return _c(
+                                    "v-col",
+                                    {
+                                      key: n,
+                                      staticClass: "d-flex child-flex",
+                                      attrs: { cols: "4" }
+                                    },
+                                    [
+                                      _c(
+                                        "v-card",
+                                        {
+                                          staticClass: "d-flex",
+                                          attrs: { flat: "", tile: "" }
+                                        },
+                                        [
+                                          _c("v-img", {
+                                            staticClass: "grey lighten-2",
+                                            attrs: {
+                                              src:
+                                                "https://picsum.photos/500/300?image=" +
+                                                (n * 6 + 15),
+                                              "lazy-src":
+                                                "https://picsum.photos/10/6?image=" +
+                                                (n * 6 + 15),
+                                              "aspect-ratio": "1"
+                                            },
+                                            scopedSlots: _vm._u(
+                                              [
+                                                {
+                                                  key: "placeholder",
+                                                  fn: function() {
+                                                    return [
+                                                      _c(
+                                                        "v-row",
+                                                        {
+                                                          staticClass:
+                                                            "fill-height ma-0",
+                                                          attrs: {
+                                                            align: "center",
+                                                            justify: "center"
+                                                          }
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "v-progress-circular",
+                                                            {
+                                                              attrs: {
+                                                                indeterminate:
+                                                                  "",
+                                                                color:
+                                                                  "grey lighten-5"
+                                                              }
+                                                            }
+                                                          )
+                                                        ],
+                                                        1
+                                                      )
+                                                    ]
+                                                  },
+                                                  proxy: true
+                                                }
+                                              ],
+                                              null,
+                                              true
+                                            )
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                }),
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-dialog",
+                {
+                  attrs: { fullscreen: _vm.fullscreen },
+                  model: {
+                    value: _vm.dialog,
+                    callback: function($$v) {
+                      _vm.dialog = $$v
+                    },
+                    expression: "dialog"
+                  }
+                },
+                [
+                  _c(
+                    "v-card",
+                    { attrs: { color: "grey lighten-5", "max-height": "900" } },
+                    [
+                      _c(
+                        "v-container",
+                        [
+                          _c(
+                            "v-row",
+                            { attrs: { justify: "center", "no-gutters": "" } },
+                            [
+                              _c(
+                                "v-col",
+                                { attrs: { cols: "12" } },
+                                [
+                                  _c(
+                                    "v-row",
+                                    [
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "8" } },
+                                        [
+                                          _c(
+                                            "v-img",
+                                            {
+                                              attrs: {
+                                                src: _vm.selectedImage,
+                                                width: "100%"
+                                              },
+                                              on: {
+                                                mouseover: function($event) {
+                                                  _vm.isHovered = true
+                                                },
+                                                mouseleave: function($event) {
+                                                  _vm.isHovered = false
+                                                }
+                                              }
+                                            },
+                                            [
+                                              _c(
+                                                "v-row",
+                                                {
+                                                  staticClass: "fill-height",
+                                                  attrs: { justify: "start" }
+                                                },
+                                                [
+                                                  _c(
+                                                    "v-col",
+                                                    { attrs: { cols: "10" } },
+                                                    [
+                                                      _vm.isHovered
+                                                        ? _c(
+                                                            "div",
+                                                            [
+                                                              _c(
+                                                                "v-btn",
+                                                                {
+                                                                  attrs: {
+                                                                    large: "",
+                                                                    color:
+                                                                      "primary",
+                                                                    icon: "",
+                                                                    absolute:
+                                                                      "",
+                                                                    top: "",
+                                                                    left: "",
+                                                                    dark: ""
+                                                                  },
+                                                                  on: {
+                                                                    click:
+                                                                      _vm.closeZoom
+                                                                  }
+                                                                },
+                                                                [
+                                                                  _c("v-icon"),
+                                                                  _vm._v(" "),
+                                                                  _vm._t(
+                                                                    "default",
+                                                                    [
+                                                                      _c(
+                                                                        "font-awesome-icon",
+                                                                        {
+                                                                          attrs: {
+                                                                            icon:
+                                                                              "times",
+                                                                            size:
+                                                                              "lg"
+                                                                          }
+                                                                        }
+                                                                      )
+                                                                    ]
+                                                                  )
+                                                                ],
+                                                                2
+                                                              ),
+                                                              _vm._v(" "),
+                                                              _c(
+                                                                "v-btn",
+                                                                {
+                                                                  attrs: {
+                                                                    icon: "",
+                                                                    absolute:
+                                                                      "",
+                                                                    top: "",
+                                                                    right: "",
+                                                                    dark: "",
+                                                                    color:
+                                                                      "primary"
+                                                                  },
+                                                                  on: {
+                                                                    click: function(
+                                                                      $event
+                                                                    ) {
+                                                                      _vm.fullscreen = !_vm.fullscreen
+                                                                    }
+                                                                  }
+                                                                },
+                                                                [
+                                                                  _c("v-icon"),
+                                                                  _vm._v(" "),
+                                                                  _vm._t(
+                                                                    "default",
+                                                                    [
+                                                                      _c(
+                                                                        "font-awesome-icon",
+                                                                        {
+                                                                          attrs: {
+                                                                            icon:
+                                                                              "expand",
+                                                                            size:
+                                                                              "lg"
+                                                                          }
+                                                                        }
+                                                                      )
+                                                                    ]
+                                                                  )
+                                                                ],
+                                                                2
+                                                              )
+                                                            ],
+                                                            1
+                                                          )
+                                                        : _vm._e()
+                                                    ]
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-col",
+                                        { attrs: { cols: "4" } },
+                                        [
+                                          _c(
+                                            "v-card",
+                                            {
+                                              staticClass: "grey lighten-5",
+                                              attrs: { flat: "" }
+                                            },
+                                            [
+                                              _c(
+                                                "v-list-item",
+                                                { staticClass: "pa-5" },
+                                                [
+                                                  _c("v-list-item-avatar", {
+                                                    attrs: { color: "grey" }
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c(
+                                                        "v-list-item-title",
+                                                        {
+                                                          staticClass:
+                                                            "headline"
+                                                        },
+                                                        [
+                                                          _c("strong", [
+                                                            _vm._v("Username")
+                                                          ])
+                                                        ]
+                                                      )
+                                                    ],
+                                                    1
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-card-actions",
+                                                    [
+                                                      _c(
+                                                        "v-btn",
+                                                        { attrs: { icon: "" } },
+                                                        [
+                                                          _c("v-icon", [
+                                                            _vm._v("mdi-pen")
+                                                          ])
+                                                        ],
+                                                        1
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c("v-divider"),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-list-item",
+                                                { staticClass: "pa-5" },
+                                                [
+                                                  _c("v-list-item-avatar", {
+                                                    attrs: { color: "grey" }
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-list-item-content",
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _c("strong", [
+                                                          _vm._v("Username")
+                                                        ]),
+                                                        _vm._v(
+                                                          " Post\n                            content"
+                                                        )
+                                                      ])
+                                                    ],
+                                                    1
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
                       )
                     ],
                     1
@@ -91709,6 +92487,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 Vue.component('ProfileBanner', __webpack_require__(/*! ./components/ProfileBanner.vue */ "./resources/js/components/ProfileBanner.vue")["default"]);
+Vue.component('ProfilePictures', __webpack_require__(/*! ./components/ProfilePictures.vue */ "./resources/js/components/ProfilePictures.vue")["default"]);
 /*
   * Import Vuetify
 */
@@ -91907,6 +92686,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfileBanner_vue_vue_type_template_id_a6a1694c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfileBanner_vue_vue_type_template_id_a6a1694c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ProfilePictures.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/ProfilePictures.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true& */ "./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true&");
+/* harmony import */ var _ProfilePictures_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProfilePictures.vue?vue&type=script&lang=js& */ "./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ProfilePictures_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "26fc5563",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ProfilePictures.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfilePictures_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ProfilePictures.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProfilePictures.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfilePictures_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true& ***!
+  \************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProfilePictures.vue?vue&type=template&id=26fc5563&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProfilePictures_vue_vue_type_template_id_26fc5563_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
