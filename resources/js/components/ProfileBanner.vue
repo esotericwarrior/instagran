@@ -23,10 +23,10 @@
                 <v-list-item two-line>
                   <v-list-item-content class="pl-6">
                     <v-list-item-title class="headline">
-                      {{ username }}
+                      {{ displayname }}
                     </v-list-item-title>
                     <v-list-item-subtitle>
-                      {{ displayname }}
+                      {{ username }}
                     </v-list-item-subtitle>
                   </v-list-item-content>
 
@@ -34,15 +34,12 @@
                   <v-card-actions>
                     <v-btn class="ma-2" color="grey darken-2" dark large>
                       Edit Profile
-                      <v-icon dark right></v-icon>
-                      <slot>
-                        <!-- <font-awesome-icon icon="pen" size="lg" /> -->
-                      </slot>
+                      <v-icon dark right>mdi-pen</v-icon>
                     </v-btn>
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on }">
-                        <v-btn icon>
-                          <!-- <font-awesome-icon icon="cog" size="2x" v-on="on" /> -->
+                        <v-btn text icon x-large>
+                          <v-icon>mdi-settings</v-icon>
                         </v-btn>
                       </template>
                       <span>Settings</span>
@@ -54,10 +51,7 @@
                 <v-card-actions class="pl-10">
                   <v-btn block class="ma-2" color="primary" dark x-large>
                     Upload Photo / Video
-                    <v-icon dark right></v-icon>
-                    <slot>
-                      <!-- <font-awesome-icon icon="camera" size="lg" /> -->
-                    </slot>
+                    <v-icon dark right>mdi-camera</v-icon>
                   </v-btn>
                 </v-card-actions>
               </div>
@@ -69,13 +63,8 @@
   </v-container>
 </template>
 <script>
-// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 export default {
   name: "ProfileBanner",
-  // components: {
-  //   FontAwesomeIcon
-  // },
   props: {
     displayname: {
       type: String,

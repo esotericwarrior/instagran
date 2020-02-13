@@ -2005,18 +2005,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
-  // components: {
-  //   FontAwesomeIcon
-  // },
   props: {
     displayname: {
       type: String,
@@ -38130,7 +38120,7 @@ var render = function() {
                                         [
                                           _vm._v(
                                             "\n                    " +
-                                              _vm._s(_vm.username) +
+                                              _vm._s(_vm.displayname) +
                                               "\n                  "
                                           )
                                         ]
@@ -38139,7 +38129,7 @@ var render = function() {
                                       _c("v-list-item-subtitle", [
                                         _vm._v(
                                           "\n                    " +
-                                            _vm._s(_vm.displayname) +
+                                            _vm._s(_vm.username) +
                                             "\n                  "
                                         )
                                       ])
@@ -38164,13 +38154,13 @@ var render = function() {
                                           _vm._v(
                                             "\n                    Edit Profile\n                    "
                                           ),
-                                          _c("v-icon", {
-                                            attrs: { dark: "", right: "" }
-                                          }),
-                                          _vm._v(" "),
-                                          _vm._t("default")
+                                          _c(
+                                            "v-icon",
+                                            { attrs: { dark: "", right: "" } },
+                                            [_vm._v("mdi-pen")]
+                                          )
                                         ],
-                                        2
+                                        1
                                       ),
                                       _vm._v(" "),
                                       _c(
@@ -38183,9 +38173,22 @@ var render = function() {
                                               fn: function(ref) {
                                                 var on = ref.on
                                                 return [
-                                                  _c("v-btn", {
-                                                    attrs: { icon: "" }
-                                                  })
+                                                  _c(
+                                                    "v-btn",
+                                                    {
+                                                      attrs: {
+                                                        text: "",
+                                                        icon: "",
+                                                        "x-large": ""
+                                                      }
+                                                    },
+                                                    [
+                                                      _c("v-icon", [
+                                                        _vm._v("mdi-settings")
+                                                      ])
+                                                    ],
+                                                    1
+                                                  )
                                                 ]
                                               }
                                             }
@@ -38222,13 +38225,13 @@ var render = function() {
                                       _vm._v(
                                         "\n                  Upload Photo / Video\n                  "
                                       ),
-                                      _c("v-icon", {
-                                        attrs: { dark: "", right: "" }
-                                      }),
-                                      _vm._v(" "),
-                                      _vm._t("default")
+                                      _c(
+                                        "v-icon",
+                                        { attrs: { dark: "", right: "" } },
+                                        [_vm._v("mdi-camera")]
+                                      )
                                     ],
-                                    2
+                                    1
                                   )
                                 ],
                                 1
