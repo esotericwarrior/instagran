@@ -23,6 +23,14 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('ProfileBanner', require('./components/ProfileBanner.vue').default);
 
 
+/*
+  * Import Vuetify
+*/
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
+
+import 'vuetify/dist/vuetify.min.css'
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -31,4 +39,5 @@ Vue.component('ProfileBanner', require('./components/ProfileBanner.vue').default
 
 const app = new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
 });
