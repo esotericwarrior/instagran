@@ -32,13 +32,13 @@
                       Edit Profile
                       <v-icon dark right></v-icon>
                       <slot>
-                        <font-awesome-icon icon="pen" size="lg" />
+                        <!-- <font-awesome-icon icon="pen" size="lg" /> -->
                       </slot>
                     </v-btn>
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on }">
                         <v-btn icon>
-                          <font-awesome-icon icon="cog" size="2x" v-on="on" />
+                          <!-- <font-awesome-icon icon="cog" size="2x" v-on="on" /> -->
                         </v-btn>
                       </template>
                       <span>Settings</span>
@@ -52,7 +52,7 @@
                     Upload Photo / Video
                     <v-icon dark right></v-icon>
                     <slot>
-                      <font-awesome-icon icon="camera" size="lg" />
+                      <!-- <font-awesome-icon icon="camera" size="lg" /> -->
                     </slot>
                   </v-btn>
                 </v-card-actions>
