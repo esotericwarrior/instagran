@@ -15,7 +15,7 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id'); // Foreign Key: Reference to ID of user, so we know profile belongs to specific user.
+            $table->unsignedBigInteger('user_id'); // Foreign Key: Reference to ID of user, so we know which profile belongs to a specific user.
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->string('url')->nullable();
