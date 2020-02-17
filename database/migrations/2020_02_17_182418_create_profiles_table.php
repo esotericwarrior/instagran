@@ -18,7 +18,7 @@ class CreateProfilesTable extends Migration
             $table->unsignedBigInteger('user_id'); // Foreign Key: Reference to ID of user, so we know profile belongs to specific user.
             $table->string('title')->nullable();
             $table->text('description')->nullable();
-            $table->string('url');->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
 
             $table->index('user_id');
