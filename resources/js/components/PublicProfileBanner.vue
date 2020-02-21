@@ -5,7 +5,9 @@ export default {
   name: "PublicProfileBanner",
   props: {},
   data() {
-    return {};
+    return {
+      isFollowed: true
+    };
   }
 };
 </script>
