@@ -56,6 +56,17 @@
                     <v-card-title>{{ title }}</v-card-title>
                     <v-card-text>
                       <div>{{ description }}</div>
+                      <div class="d-flex">
+                        <div class="pr-5">
+                          <strong>{{ count }}</strong> posts
+                        </div>
+                        <div class="pr-5">
+                          <strong>{{ 1302 }}</strong> followers
+                        </div>
+                        <div class="pr-5">
+                          <strong>{{ 212 }}</strong> following
+                        </div>
+                      </div>
                     </v-card-text>
                   </v-col>
                 </div>
