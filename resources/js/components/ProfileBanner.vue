@@ -21,40 +21,43 @@
             <v-col cols="8">
               <v-card class="pa-2" color="grey lighten-5" flat tile>
                 <div class="">
-                  <v-list-item two-line>
-                    <v-list-item-content class="pl-6">
-                      <v-list-item-title class="headline">
-                        {{ displayname }}
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        {{ username }}
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
+                  <v-col cols="12">
+                    <v-list-item two-line>
+                      <v-list-item-content class="">
+                        <v-list-item-title class="headline">{{
+                          username
+                        }}</v-list-item-title>
+                        <v-list-item-subtitle>{{
+                          displayname
+                        }}</v-list-item-subtitle>
+                      </v-list-item-content>
+                      <v-card-actions>
+                        <v-btn class="ma-2" color="grey darken-2" dark large>
+                          Edit Profile
+                          <v-icon dark right>
+                            mdi-account-edit
+                          </v-icon>
+                        </v-btn>
+                        <v-btn icon color="" x-large>
+                          <v-icon>mdi-settings</v-icon>
+                        </v-btn>
+                      </v-card-actions>
+                    </v-list-item>
 
-                    <!-- Profile Header Buttons -->
                     <v-card-actions>
-                      <v-btn class="ma-2" color="grey darken-2" dark large>
-                        Edit Profile
-                        <v-icon dark right>mdi-pen</v-icon>
+                      <v-btn block class="ma-2" color="primary" dark x-large>
+                        Add New Post
+                        <v-icon dark right>
+                          mdi-camera
+                        </v-icon>
                       </v-btn>
-                      <v-tooltip bottom>
-                        <template v-slot:activator="{ on }">
-                          <v-btn text icon x-large>
-                            <v-icon>mdi-settings</v-icon>
-                          </v-btn>
-                        </template>
-                        <span>Settings</span>
-                      </v-tooltip>
                     </v-card-actions>
-                  </v-list-item>
 
-                  <!-- Upload Button -->
-                  <v-card-actions class="pl-10">
-                    <v-btn block class="ma-2" color="primary" dark x-large>
-                      Upload Photo / Video
-                      <v-icon dark right>mdi-camera</v-icon>
-                    </v-btn>
-                  </v-card-actions>
+                    <v-card-title>{{ title }}</v-card-title>
+                    <v-card-text>
+                      <div>{{ description }}</div>
+                    </v-card-text>
+                  </v-col>
                 </div>
               </v-card>
             </v-col>

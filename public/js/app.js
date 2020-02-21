@@ -2007,6 +2007,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
   props: {
@@ -38655,32 +38658,84 @@ var render = function() {
                                 {},
                                 [
                                   _c(
-                                    "v-list-item",
-                                    { attrs: { "two-line": "" } },
+                                    "v-col",
+                                    { attrs: { cols: "12" } },
                                     [
                                       _c(
-                                        "v-list-item-content",
-                                        { staticClass: "pl-6" },
+                                        "v-list-item",
+                                        { attrs: { "two-line": "" } },
                                         [
                                           _c(
-                                            "v-list-item-title",
-                                            { staticClass: "headline" },
+                                            "v-list-item-content",
+                                            {},
                                             [
-                                              _vm._v(
-                                                "\n                      " +
-                                                  _vm._s(_vm.displayname) +
-                                                  "\n                    "
-                                              )
-                                            ]
+                                              _c(
+                                                "v-list-item-title",
+                                                { staticClass: "headline" },
+                                                [_vm._v(_vm._s(_vm.username))]
+                                              ),
+                                              _vm._v(" "),
+                                              _c("v-list-item-subtitle", [
+                                                _vm._v(_vm._s(_vm.displayname))
+                                              ])
+                                            ],
+                                            1
                                           ),
                                           _vm._v(" "),
-                                          _c("v-list-item-subtitle", [
-                                            _vm._v(
-                                              "\n                      " +
-                                                _vm._s(_vm.username) +
-                                                "\n                    "
-                                            )
-                                          ])
+                                          _c(
+                                            "v-card-actions",
+                                            [
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  staticClass: "ma-2",
+                                                  attrs: {
+                                                    color: "grey darken-2",
+                                                    dark: "",
+                                                    large: ""
+                                                  }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                        Edit Profile\n                        "
+                                                  ),
+                                                  _c(
+                                                    "v-icon",
+                                                    {
+                                                      attrs: {
+                                                        dark: "",
+                                                        right: ""
+                                                      }
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                          mdi-account-edit\n                        "
+                                                      )
+                                                    ]
+                                                  )
+                                                ],
+                                                1
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "v-btn",
+                                                {
+                                                  attrs: {
+                                                    icon: "",
+                                                    color: "",
+                                                    "x-large": ""
+                                                  }
+                                                },
+                                                [
+                                                  _c("v-icon", [
+                                                    _vm._v("mdi-settings")
+                                                  ])
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
                                         ],
                                         1
                                       ),
@@ -38693,98 +38748,43 @@ var render = function() {
                                             {
                                               staticClass: "ma-2",
                                               attrs: {
-                                                color: "grey darken-2",
+                                                block: "",
+                                                color: "primary",
                                                 dark: "",
-                                                large: ""
+                                                "x-large": ""
                                               }
                                             },
                                             [
                                               _vm._v(
-                                                "\n                      Edit Profile\n                      "
+                                                "\n                      Add New Post\n                      "
                                               ),
                                               _c(
                                                 "v-icon",
                                                 {
                                                   attrs: { dark: "", right: "" }
                                                 },
-                                                [_vm._v("mdi-pen")]
+                                                [
+                                                  _vm._v(
+                                                    "\n                        mdi-camera\n                      "
+                                                  )
+                                                ]
                                               )
                                             ],
                                             1
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-tooltip",
-                                            {
-                                              attrs: { bottom: "" },
-                                              scopedSlots: _vm._u([
-                                                {
-                                                  key: "activator",
-                                                  fn: function(ref) {
-                                                    var on = ref.on
-                                                    return [
-                                                      _c(
-                                                        "v-btn",
-                                                        {
-                                                          attrs: {
-                                                            text: "",
-                                                            icon: "",
-                                                            "x-large": ""
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("v-icon", [
-                                                            _vm._v(
-                                                              "mdi-settings"
-                                                            )
-                                                          ])
-                                                        ],
-                                                        1
-                                                      )
-                                                    ]
-                                                  }
-                                                }
-                                              ])
-                                            },
-                                            [
-                                              _vm._v(" "),
-                                              _c("span", [_vm._v("Settings")])
-                                            ]
                                           )
                                         ],
                                         1
-                                      )
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "v-card-actions",
-                                    { staticClass: "pl-10" },
-                                    [
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          staticClass: "ma-2",
-                                          attrs: {
-                                            block: "",
-                                            color: "primary",
-                                            dark: "",
-                                            "x-large": ""
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    Upload Photo / Video\n                    "
-                                          ),
-                                          _c(
-                                            "v-icon",
-                                            { attrs: { dark: "", right: "" } },
-                                            [_vm._v("mdi-camera")]
-                                          )
-                                        ],
-                                        1
-                                      )
+                                      ),
+                                      _vm._v(" "),
+                                      _c("v-card-title", [
+                                        _vm._v(_vm._s(_vm.title))
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("v-card-text", [
+                                        _c("div", [
+                                          _vm._v(_vm._s(_vm.description))
+                                        ])
+                                      ])
                                     ],
                                     1
                                   )
