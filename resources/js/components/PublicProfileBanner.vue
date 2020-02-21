@@ -12,6 +12,47 @@
                 </v-avatar>
               </div>
             </v-col>
+
+            <!-- Profile Header -->
+            <v-col cols="8">
+              <v-card class="pa-2" color="grey lighten-5" flat tile>
+                <div class="">
+                  <v-col cols="12">
+                    <v-list-item two-line>
+                      <v-list-item-content class="">
+                        <v-list-item-title class="headline">{{
+                          username
+                        }}</v-list-item-title>
+                        <v-list-item-subtitle>{{
+                          displayname
+                        }}</v-list-item-subtitle>
+                      </v-list-item-content>
+                      <v-card-actions>
+                        <v-btn
+                          @click="isFollowed = !isFollowed"
+                          class="ma-2"
+                          color="grey darken-2"
+                          dark
+                          large
+                        >
+                          {{ isFollowed ? "Following" : "Follow " }}
+                          <v-icon dark right>
+                            {{
+                              isFollowed
+                                ? "mdi-account-cancel"
+                                : "mdi-account-plus"
+                            }}
+                          </v-icon>
+                        </v-btn>
+                        <v-btn icon color="" x-large>
+                          <v-icon>mdi-dots-horizontal</v-icon>
+                        </v-btn>
+                      </v-card-actions>
+                    </v-list-item>
+                  </v-col>
+                </div>
+              </v-card>
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
