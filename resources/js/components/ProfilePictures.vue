@@ -17,24 +17,16 @@
               <v-container fluid>
                 <v-row>
                   <v-col
-                    v-for="n in 9"
-                    :key="n"
+                    v-for="(item, index) in user"
+                    :key="index"
                     class="d-flex child-flex"
                     cols="4"
                   >
                     <v-card flat tile class="d-flex">
                       <v-img
-                        @click="
-                          openDialog(
-                            `https://picsum.photos/500/300?image=${n * 5 + 10}`
-                          )
-                        "
-                        :src="
-                          `https://picsum.photos/500/300?image=${n * 5 + 10}`
-                        "
-                        :lazy-src="
-                          `https://picsum.photos/10/6?image=${n * 5 + 10}`
-                        "
+                        @click="openDialog('/storage/' + item.image)"
+                        :src="'/storage/' + item.image"
+                        :lazy-src="'/storage/' + item.image"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -192,6 +184,12 @@
 <script>
 export default {
   name: "ProfilePictures",
+  props: {
+    user: {
+      type: Array,
+      required: true
+    }
+  },
   data() {
     return {
       dialog: false,
@@ -215,7 +213,15 @@ export default {
       // eslint-disable-next-line no-console
       console.log("Zoom", url);
       this.selectedImage = url;
+    },
+    testFunction() {
+      console.log(this.user);
+      console.log(this.user[0]);
+      console.log(this.user[0].image);
     }
+  },
+  mounted() {
+    this.testFunction();
   }
 };
 </script>
