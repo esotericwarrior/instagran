@@ -20,7 +20,7 @@
             <!-- Profile Header -->
             <v-col cols="8">
               <v-card class="pa-2" color="grey lighten-5" flat tile>
-                <div class="pl-10">
+                <div class="">
                   <v-list-item two-line>
                     <v-list-item-content class="pl-6">
                       <v-list-item-title class="headline">

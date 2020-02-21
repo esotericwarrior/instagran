@@ -38652,7 +38652,7 @@ var render = function() {
                             [
                               _c(
                                 "div",
-                                { staticClass: "pl-10" },
+                                {},
                                 [
                                   _c(
                                     "v-list-item",
