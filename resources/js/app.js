@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('ProfileBanner', require('./components/ProfileBanner.vue').default);
+Vue.component('PublicProfileBanner', require('./components/PublicProfileBanner.vue').default);
 Vue.component('ProfilePictures', require('./components/ProfilePictures.vue').default);
 
 /*
