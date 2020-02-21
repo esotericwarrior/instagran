@@ -242,15 +242,7 @@ export default {
       // eslint-disable-next-line no-console
       console.log("Zoom", url);
       this.selectedImage = url;
-    },
-    testFunction() {
-      console.log(this.user);
-      console.log(this.user[0]);
-      console.log(this.user[0].image);
     }
-  },
-  mounted() {
-    this.testFunction();
   }
 };
 </script>
