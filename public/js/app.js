@@ -2013,9 +2013,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
   props: {
+    count: {
+      "default": null,
+      type: Number
+    },
+    description: {
+      "default": null,
+      type: String
+    },
     displayname: {
       type: String,
       required: true
+    },
+    title: {
+      "default": null,
+      type: String
+    },
+    url: {
+      "default": null,
+      type: String
     },
     username: {
       type: String,

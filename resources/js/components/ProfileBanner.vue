@@ -71,9 +71,25 @@
 export default {
   name: "ProfileBanner",
   props: {
+    count: {
+      default: null,
+      type: Number
+    },
+    description: {
+      default: null,
+      type: String
+    },
     displayname: {
       type: String,
       required: true
+    },
+    title: {
+      default: null,
+      type: String
+    },
+    url: {
+      default: null,
+      type: String
     },
     username: {
       type: String,
