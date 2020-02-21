@@ -2034,6 +2034,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
   props: {
@@ -6998,7 +7001,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#inspire[data-v-a6a1694c] {\n  flex: 1 1 auto;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  display: flex;\n  flex-direction: column;\n  min-height: 1vh !important;\n  max-width: 100%;\n  height: 30vh;\n  position: relative;\n}\na[data-v-a6a1694c] {\n  text-decoration: none;\n  color: grey;\n}", ""]);
+exports.push([module.i, "#inspire[data-v-a6a1694c] {\n  flex: 1 1 auto;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  display: flex;\n  flex-direction: column;\n  min-height: 50vh !important;\n  max-width: 100%;\n  height: 30vh;\n  position: relative;\n}\na[data-v-a6a1694c] {\n  text-decoration: none;\n  color: grey;\n}", ""]);
 
 // exports
 
@@ -38821,6 +38824,14 @@ var render = function() {
                                       _c("v-card-text", [
                                         _c("div", [
                                           _vm._v(_vm._s(_vm.description))
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", [
+                                          _c(
+                                            "a",
+                                            { attrs: { href: _vm.url } },
+                                            [_vm._v(_vm._s(_vm.url))]
+                                          )
                                         ]),
                                         _vm._v(" "),
                                         _c("div", { staticClass: "d-flex" }, [

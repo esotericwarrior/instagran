@@ -17,7 +17,7 @@ class ProfilesController extends Controller
     return view('profiles.edit', compact('user'));
   }
 
-  public function update()
+  public function update(User $user)
   {
     $data = request()->validate([
       'title' => 'required',
@@ -26,6 +26,9 @@ class ProfilesController extends Controller
       'image' => '',
     ]);
 
-    dd($data);
+    $user->profile->update($data);
+
+    return redirect("/profile/{$user->id}");
+
   }
 }
