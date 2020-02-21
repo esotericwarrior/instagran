@@ -12,6 +12,7 @@
         :displayname='@json($user->name)'
         :title='@json($user->title)'
         :url='@json($user->url)'
+        :user='@json($user)'
         :username='@json($user->username)'
       >
       </profile-banner>
