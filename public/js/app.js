@@ -38614,7 +38614,7 @@ var render = function() {
                     "v-row",
                     { staticClass: "mb-6 mt-10", attrs: { "no-gutters": "" } },
                     [
-                      _c("v-col", { attrs: { cols: "3" } }, [
+                      _c("v-col", { attrs: { cols: "4" } }, [
                         _c(
                           "div",
                           { staticClass: "pr-10", attrs: { align: "right" } },

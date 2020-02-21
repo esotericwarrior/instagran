@@ -5,7 +5,7 @@
         <v-col cols="12" sm="10" offset-sm="0">
           <v-row class="mb-6 mt-10" no-gutters>
             <!-- Profile Avatar -->
-            <v-col cols="3">
+            <v-col cols="4">
               <div class="pr-10" align="right">
                 <v-avatar color="primary" size="150">
                   <img
