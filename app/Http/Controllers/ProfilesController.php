@@ -15,4 +15,9 @@ class ProfilesController extends Controller
         'user' => $user,
       ]);
   }
+
+  public function edit(\App\User $user)
+  {
+    return view('profiles.edit', compact('user'))
+  }
 }
