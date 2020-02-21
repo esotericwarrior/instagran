@@ -69,6 +69,9 @@
                     <v-card-title>{{ title }}</v-card-title>
                     <v-card-text>
                       <div>{{ description }}</div>
+                      <div>
+                        <a :href="url">{{ url }}</a>
+                      </div>
                       <div class="d-flex">
                         <div class="pr-5">
                           <strong>{{ count }}</strong> posts
@@ -135,7 +138,7 @@ export default {
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 1vh !important;
+  min-height: 50vh !important;
   max-width: 100%;
   height: 30vh;
   position: relative;
