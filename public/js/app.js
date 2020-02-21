@@ -2010,6 +2010,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
   props: {
@@ -2297,15 +2315,7 @@ __webpack_require__.r(__webpack_exports__);
       // eslint-disable-next-line no-console
       console.log("Zoom", url);
       this.selectedImage = url;
-    },
-    testFunction: function testFunction() {
-      console.log(this.user);
-      console.log(this.user[0]);
-      console.log(this.user[0].image);
     }
-  },
-  mounted: function mounted() {
-    this.testFunction();
   }
 });
 
@@ -6978,7 +6988,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#inspire[data-v-a6a1694c] {\n  flex: 1 1 auto;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  display: flex;\n  flex-direction: column;\n  min-height: 1vh !important;\n  max-width: 100%;\n  height: 30vh;\n  position: relative;\n}", ""]);
+exports.push([module.i, "#inspire[data-v-a6a1694c] {\n  flex: 1 1 auto;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  display: flex;\n  flex-direction: column;\n  min-height: 1vh !important;\n  max-width: 100%;\n  height: 30vh;\n  position: relative;\n}\na[data-v-a6a1694c] {\n  text-decoration: none;\n  color: grey;\n}", ""]);
 
 // exports
 
@@ -38767,7 +38777,8 @@ var render = function() {
                                                 block: "",
                                                 color: "primary",
                                                 dark: "",
-                                                "x-large": ""
+                                                "x-large": "",
+                                                href: "/p/create"
                                               }
                                             },
                                             [
@@ -38799,6 +38810,33 @@ var render = function() {
                                       _c("v-card-text", [
                                         _c("div", [
                                           _vm._v(_vm._s(_vm.description))
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "d-flex" }, [
+                                          _c("div", { staticClass: "pr-5" }, [
+                                            _c("strong", [
+                                              _vm._v(_vm._s(_vm.count))
+                                            ]),
+                                            _vm._v(
+                                              " posts\n                      "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("div", { staticClass: "pr-5" }, [
+                                            _c("strong", [
+                                              _vm._v(_vm._s(1302))
+                                            ]),
+                                            _vm._v(
+                                              " followers\n                      "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("div", { staticClass: "pr-5" }, [
+                                            _c("strong", [_vm._v(_vm._s(212))]),
+                                            _vm._v(
+                                              " following\n                      "
+                                            )
+                                          ])
                                         ])
                                       ])
                                     ],

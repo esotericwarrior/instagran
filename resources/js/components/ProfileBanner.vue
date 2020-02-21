@@ -45,7 +45,14 @@
                     </v-list-item>
 
                     <v-card-actions>
-                      <v-btn block class="ma-2" color="primary" dark x-large>
+                      <v-btn
+                        block
+                        class="ma-2"
+                        color="primary"
+                        dark
+                        x-large
+                        href="/p/create"
+                      >
                         Add New Post
                         <v-icon dark right>
                           mdi-camera
@@ -122,5 +129,10 @@ export default {
   max-width: 100%;
   height: 30vh;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
 }
 </style>
