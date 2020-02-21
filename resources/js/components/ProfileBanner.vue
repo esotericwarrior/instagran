@@ -82,4 +82,15 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#inspire {
+  flex: 1 1 auto;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 1vh !important;
+  max-width: 100%;
+  height: 30vh;
+  position: relative;
+}
+</style>
