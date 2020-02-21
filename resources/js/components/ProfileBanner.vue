@@ -32,7 +32,13 @@
                         }}</v-list-item-subtitle>
                       </v-list-item-content>
                       <v-card-actions>
-                        <v-btn class="ma-2" color="grey darken-2" dark large>
+                        <v-btn
+                          class="ma-2"
+                          color="grey darken-2"
+                          dark
+                          large
+                          :href="user.id + '/edit'"
+                        >
                           Edit Profile
                           <v-icon dark right>
                             mdi-account-edit
@@ -108,6 +114,10 @@ export default {
     url: {
       default: null,
       type: String
+    },
+    user: {
+      default: null,
+      type: Object
     },
     username: {
       type: String,
