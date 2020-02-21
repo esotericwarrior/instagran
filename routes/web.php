@@ -21,4 +21,5 @@ Route::get('/p/create', 'PostsController@create');
 Route::post('/p', 'PostsController@store');
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
-Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');
+Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');  // Shows the edit form for the user's profile.
+Route::patch('/profile/{user}', 'ProfilesController@update'->name('profile.update')); // Performs the updating of the user's profile.
