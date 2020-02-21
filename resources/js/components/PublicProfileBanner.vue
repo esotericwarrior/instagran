@@ -1,6 +1,12 @@
 <template>
   <v-app class="white" id="inspire">
-    <v-container class="grey lighten-5"> </v-container>
+    <v-container class="grey lighten-5">
+      <v-row>
+        <v-col cols="12">
+          <v-row class="mb-6 mt-10" no-gutters> </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-app>
 </template>
 
