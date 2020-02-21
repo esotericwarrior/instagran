@@ -6,10 +6,18 @@
         <v-tabs
           background-color="grey lighten-5"
           color="blue accent-4"
-          fixed-tabs
+          centered
+          grow
+          icons-and-text
         >
-          <v-tab>My Posts</v-tab>
-          <v-tab>Favorites</v-tab>
+          <v-tab>
+            My Posts
+            <v-icon>mdi-apps</v-icon>
+          </v-tab>
+          <v-tab>
+            Favorites
+            <v-icon>mdi-heart</v-icon>
+          </v-tab>
 
           <!-- Posts -->
           <v-tab-item>
