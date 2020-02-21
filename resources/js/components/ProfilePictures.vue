@@ -30,28 +30,48 @@
                     class="d-flex child-flex"
                     cols="4"
                   >
-                    <v-card flat tile class="d-flex">
-                      <v-img
-                        @click="openDialog('/storage/' + item.image)"
-                        :src="'/storage/' + item.image"
-                        :lazy-src="'/storage/' + item.image"
-                        aspect-ratio="1"
-                        class="grey lighten-2"
-                      >
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                        </template>
-                      </v-img>
-                    </v-card>
+                    <v-hover v-slot:default="{ hover }">
+                      <v-card flat tile class="d-flex">
+                        <v-img
+                          @click="openDialog('/storage/' + item.image)"
+                          :src="'/storage/' + item.image"
+                          :lazy-src="'/storage/' + item.image"
+                          aspect-ratio="1"
+                          class="grey lighten-2"
+                        >
+                          <template v-slot:placeholder>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular
+                                indeterminate
+                                color="grey lighten-5"
+                              ></v-progress-circular>
+                            </v-row>
+                          </template>
+                          <v-fade-transition>
+                            <v-overlay v-if="hover" absolute color="#2c2f36">
+                              <v-btn
+                                v-for="(icon, index) in icons"
+                                :key="index"
+                                :class="{ 'show-btns': hover }"
+                                color="transparent"
+                                icon
+                              >
+                                <v-icon
+                                  :class="{ 'show-btns': hover }"
+                                  color="transparent"
+                                >
+                                  {{ icon }}
+                                </v-icon>
+                              </v-btn>
+                            </v-overlay>
+                          </v-fade-transition>
+                        </v-img>
+                      </v-card>
+                    </v-hover>
                   </v-col>
                 </v-row>
               </v-container>
@@ -202,6 +222,7 @@ export default {
     return {
       dialog: false,
       fullscreen: false,
+      icons: ["mdi-heart", "mdi-comment"],
       isHovered: false,
       selectedImage: null
     };
@@ -233,4 +254,8 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.show-btns {
+  color: rgba(255, 255, 255, 1) !important;
+}
+</style>
