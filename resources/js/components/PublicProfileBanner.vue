@@ -3,7 +3,16 @@
     <v-container class="grey lighten-5">
       <v-row>
         <v-col cols="12">
-          <v-row class="mb-6 mt-10" no-gutters> </v-row>
+          <v-row class="mb-6 mt-10" no-gutters>
+            <!-- Profile Avatar -->
+            <v-col cols="4">
+              <div class="pr-10" align="right">
+                <v-avatar color="primary" size="150">
+                  <span class="white--text headline">Profile Pic</span>
+                </v-avatar>
+              </div>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
