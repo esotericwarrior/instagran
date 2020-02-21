@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-container class="grey lighten-5">
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="10" offset-sm="0">
           <v-row class="mb-6 mt-10" no-gutters>
             <!-- Profile Avatar -->
             <v-col cols="3">
@@ -18,7 +18,7 @@
             </v-col>
 
             <!-- Profile Header -->
-            <v-col cols="9">
+            <v-col cols="8">
               <v-card class="pa-2" color="grey lighten-5" flat tile>
                 <div class="pl-10">
                   <v-list-item two-line>

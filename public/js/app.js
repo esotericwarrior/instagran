@@ -38608,7 +38608,7 @@ var render = function() {
             [
               _c(
                 "v-col",
-                { attrs: { cols: "12" } },
+                { attrs: { cols: "12", sm: "10", "offset-sm": "0" } },
                 [
                   _c(
                     "v-row",
@@ -38637,7 +38637,7 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "v-col",
-                        { attrs: { cols: "9" } },
+                        { attrs: { cols: "8" } },
                         [
                           _c(
                             "v-card",
