@@ -1,7 +1,7 @@
 <template>
   <v-container class="grey lighten-5">
     <v-row>
-      <v-col cols="12" sm="6" offset-sm="3">
+      <v-col cols="12">
         <!-- Tabs -->
         <v-tabs
           background-color="grey lighten-5"
