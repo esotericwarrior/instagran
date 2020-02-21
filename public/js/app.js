@@ -2028,6 +2028,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProfileBanner",
   props: {
@@ -2050,6 +2056,10 @@ __webpack_require__.r(__webpack_exports__);
     url: {
       "default": null,
       type: String
+    },
+    user: {
+      "default": null,
+      type: Object
     },
     username: {
       type: String,
@@ -38718,7 +38728,8 @@ var render = function() {
                                                   attrs: {
                                                     color: "grey darken-2",
                                                     dark: "",
-                                                    large: ""
+                                                    large: "",
+                                                    href: _vm.user.id + "/edit"
                                                   }
                                                 },
                                                 [
