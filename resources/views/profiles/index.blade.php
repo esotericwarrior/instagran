@@ -10,8 +10,8 @@
         :count='@json($user->posts->count())'
         :description='@json($user->profile->description)'
         :displayname='@json($user->name)'
-        :title='@json($user->title)'
-        :url='@json($user->url)'
+        :title='@json($user->profile->title)'
+        :url='@json($user->profile->url)'
         :user='@json($user)'
         :username='@json($user->username)'
       >
@@ -22,8 +22,8 @@
         :count='@json($user->posts->count())'
         :description='@json($user->profile->description)'
         :displayname='@json($user->name)'
-        :title='@json($user->title)'
-        :url='@json($user->url)'
+        :title='@json($user->profile->title)'
+        :url='@json($user->profile->url)'
         :username='@json($user->username)'
       >
       </public-profile-banner>
