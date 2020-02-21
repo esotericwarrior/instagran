@@ -1,4 +1,8 @@
-<template> </template>
+<template>
+  <v-app class="white" id="inspire">
+    <v-container class="grey lighten-5"> </v-container>
+  </v-app>
+</template>
 
 <script>
 export default {
