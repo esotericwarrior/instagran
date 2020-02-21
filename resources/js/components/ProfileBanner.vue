@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-container class="grey lighten-5">
       <v-row>
-        <v-col cols="12" sm="6" offset-sm="3">
+        <v-col cols="12">
           <v-row class="mb-6 mt-10" no-gutters>
             <!-- Profile Avatar -->
             <v-col cols="3">
